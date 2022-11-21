@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Lato:ital,wght@1,100&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+    body{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+      background-color: #F3EAE3;
+    }
+    .container{
+      background-color: white;
+      margin-top: 9%;
+      display: flex;
+      flex-direction: row;
+      width: 500px;
+      height: 400px;
+      box-shadow: 0px 0px 4px white;
+      border-radius: 15px;
+    }
+
+    .img{
+      width: 55%;
+      height: 100%;
+    }
+    .img img{
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+
+    .texto{
+      width: 50%;
+      height: 100%;
+      padding: 20px;
+
+    }
+    .texto span{
+      text-transform: uppercase;
+      color: rgb(36, 35, 35, 0.4);
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+    .texto p{
+      margin-top: 20px;
+      color: rgb(36, 35, 35, 0.4);
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+    .precio{
+      margin-top: 20px;
+      width: 80%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      color: #467D68;
+      font-size: 25px;
+
+    }
+
+    button{
+      margin-top: 20px;
+      background-color: #467D68;
+      color: white;
+      width: 100%;
+      height: 50px;
+      border: 0px transparent;
+      border-radius: 5px;
+    }
+    button i{
+      margin: 10px;
+    }
+    button:hover{
+      background-color: #1A4031;
+      cursor: pointer;
+    }
+
+
+    @media screen and (max-width: 500px){
+      body{
+        padding: 30px;
+      }
+      .container{
+        width: 80%;
+        height: auto;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+      }
+      .img{
+        width: 100%;
+        height: 230px;
+      }
+      .texto{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+      }
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/e1fa9a6b02.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+      <div class="img">
+        <img src="./images/image-product-desktop.jpg" alt="">
+      </div>
+      <div class="texto">
+        <span> Perfume</span>
+        <h1>Gabrielle Essence Eau De Parfum</h1>
+        <p>
+          A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+          Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="precio">
+          <h2>$149.99</h2>
+          <span>$149.99</span>
+          
+        </div>
+        <button><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+      </div>
+  </div>
+  
+</body>
+</html>
